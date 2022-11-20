@@ -1,4 +1,4 @@
-<div class="flex flex-col sm:flex-row gap-4 my-8">
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
 
 
         <div class="bg-white  shadow-md   flex flex-col  sm:w-1/2">
@@ -19,7 +19,7 @@
 
 
 
-        <div class="bg-white   shadow-md   flex flex-col  sm:w-1/2">
+        <div class="bg-white  shadow-md   flex flex-col  sm:w-1/2">
             <img class=" " src="{{ config('app.url', 'http://localhost') }}/img/fort2.webp" />
             <div class="p-4">
                 <h4 class="text-2xl my-3">700-летие первого упоминания Гдова в Летописи</h4>

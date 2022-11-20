@@ -1,7 +1,7 @@
 
 <x-app-layout>
     <div class="max-w-7xl mx-auto px-4">
-        <H2 class="text-4xl font-bold border-b border-gray-300 py-2 mb-4">Новости Гдовского района</H2>
+        <H2 class="text-4xl font-bold border-b border-gray-300 py-2 mb-4">Интересные события</H2>
 
         <div class="pb-4  flex flex-col gap-4">
 
@@ -39,3 +39,7 @@
         @endpush
     @endonce --}}
 </x-app-layout>
+
+<script>
+    document.querySelector('#menu').scrollIntoView({block: 'start'});
+</script>

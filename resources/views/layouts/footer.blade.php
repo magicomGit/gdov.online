@@ -1,5 +1,5 @@
-<div class="min-h-[200px] bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-wrap flex-col gap-4 sm:flex-row">
+<div class="max-w-7xl mx-auto min-h-[200px] bg-slate-900 text-white">
+    <div class=" px-4 py-6 flex flex-wrap flex-col gap-4 sm:flex-row">
 
 
 

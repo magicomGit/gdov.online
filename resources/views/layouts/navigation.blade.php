@@ -36,15 +36,23 @@
         transform: translateY(-15px);
         opacity: 1;
     }
-</style>
 
-<div class=" px-4 max-w-7xl mx-auto relative hidden sm:block">
-    <img class="" src="{{ config('app.url', 'http://localhost') }}/img/32.webp" alt="">
+    .bg{
+        background-image: url("/img/headbg.webp");
+        background-position: center;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #87acdf;
+    }
+</style>
+{{-- a3c2f9 --}}
+<div class="bg h-[372px]  mx-auto relative hidden sm:block">
 
 </div>
-<nav x-data="{ open: false }" class="bg-[#3C8C73] ">
+<nav x-data="{ open: false }" class="bg-[#821d21] max-w-7xl mx-auto">
     <!-- Primary Navigation Menu -->
-    <div class="max-w-7xl mx-auto px-4 ">
+    <div id="menu" class="max-w-7xl mx-auto px-4 ">
 
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -75,32 +83,12 @@
                             <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
                                     href="{{ route('culture.history') }}">История района</a> </div>
                             <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Жизнь района</a> </div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Подвиги</a></div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Почетные граждане Гдова</a></div>
+                                    href="{{ route('culture.live') }}">Жизнь района</a> </div>
                         </div>
                     </div>
 
 
-                    <div class="hoverable p-3">
-                        <div class="text-lg font-medium text-white">Культура</div>
-                        <div
-                            class="w-0 h-0 border-[15px] border-transparent border-b-[15px] border-b-white hoverable-block-arrow shadow-lg">
-                        </div>
-                        <div class="bg-white py-5 shadow-lg   hoverable-block ">
 
-
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Музеи</a> </div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Памятники и архитектура</a></div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Церкви</a></div>
-
-                        </div>
-                    </div>
                     <div class="hoverable p-3">
                         <div class="text-lg font-medium text-white">Туризм</div>
                         <div
@@ -108,32 +96,16 @@
                         </div>
                         <div class="bg-white py-5 shadow-lg  hoverable-block">
                             <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Куда сходить</a> </div>
+                                    href="{{ route('culture.map') }}">Интерактивная карта</a> </div>
                             <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('tourism.map') }}">Достопримечательности</a></div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Базы отдыха</a></div>
+                                    href="{{ route('tourism.places') }}">Достопримечательности</a></div>
 
                         </div>
                     </div>
-                    <div class="hoverable p-3">
-                        <div class="text-lg font-medium text-white">Бизнес</div>
-                        <div
-                            class="w-0 h-0 border-[15px] border-transparent border-b-[15px] border-b-white hoverable-block-arrow shadow-lg">
-                        </div>
-                        <div class="bg-white py-5 shadow-lg  hoverable-block">
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Инвестициии</a> </div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Льготные программы</a></div>
-                            <div class="py-2 px-5 whitespace-nowrap hover:bg-gray-100"><a
-                                    href="{{ route('home') }}">Документы</a></div>
 
-                        </div>
-                    </div>
 
                     <div class="text-lg font-medium text-white p-3">
-                        <a href="{{ route('posts') }}">Новости</a>
+                        <a href="{{ route('posts') }}">События</a>
                     </div>
 
 

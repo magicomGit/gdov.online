@@ -41,6 +41,7 @@ Route::delete('/pictures/destroy', [PostController::class, 'pictureDestroy'])->n
 
 
 Route::get('/tourism/map', [TourismController::class, 'index'])->name('tourism.map');
+Route::get('/tourism/places', [TourismController::class, 'places'])->name('tourism.places');
 
 Route::get('/profile/news', [ProfileController::class, 'news'])->name('profile.news')->middleware('auth');
 
@@ -50,6 +51,14 @@ Route::prefix('culture')->group(function(){
     Route::get('/history', function () {
              return view('culture.history');
          })->name('culture.history');
+
+    Route::get('/live', function () {
+            return view('culture.live');
+        })->name('culture.live');
+
+    Route::get('/map', function () {
+        return view('culture.map');
+        })->name('culture.map');
 });
 
 

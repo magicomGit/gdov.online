@@ -26,27 +26,30 @@
         opacity: 1;
     }
 
+    .bg2{
+        background: url("/img/right.webp")top right no-repeat fixed,
+         url("/img/left.webp")top left no-repeat fixed ;
+    }
 
 </style>
 
 <body class="font-sans antialiased ">
-    <div class="min-h-screen bg-gray-100 relative">
+    <div class="min-h-screen bg2 relative">
 
         @include('layouts.navigation')
 
-        <!-- Page Heading -->
-        @if (isset($header))
-            <header class="bg-white shadow">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 ">
-                    {{ $header }}
-                </div>
-            </header>
-        @endif
+
 
 
         <!-- Page Content -->
-        <main class="min-h-[60vh] preload">
-            {{ $slot }}
+        <main class=" min-h-[60vh] ">
+            <div id="wrap" class="max-w-7xl  mx-auto p-4 min-h-[60vh] bg-white">
+                <div class="preload">
+                    {{ $slot }}
+
+                </div>
+            </div>
+
         </main>
         <footer> @include('layouts.footer') </footer>
     </div>

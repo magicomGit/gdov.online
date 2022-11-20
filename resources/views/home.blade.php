@@ -1,6 +1,6 @@
 
 <x-app-layout>
-    <div class="max-w-7xl mx-auto px-4">
+
 
         <x-home.lastNews :posts="$posts" />
 
@@ -8,6 +8,6 @@
 
         <x-home.afisha/>
 
-    </div>
+
 
 </x-app-layout>

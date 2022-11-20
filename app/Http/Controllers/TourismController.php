@@ -10,4 +10,9 @@ class TourismController extends Controller
 
         return view('tourism.map');
     }
+
+    public function places(){
+
+        return view('tourism.places');
+    }
 }

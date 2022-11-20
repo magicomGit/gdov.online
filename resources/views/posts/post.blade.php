@@ -120,7 +120,7 @@
                 @endfor
             </ul>
         </div>
-        <div class="max-w-[1024px] mx-auto mb-6">{!! $post->content !!}</div>
+        <div class="max-w-[1024px] mx-auto pb-6">{!! $post->content !!}</div>
 
     </div>
 
@@ -131,6 +131,11 @@
 
 
 <script>
+    document.querySelector('#menu').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
     const buttons = document.querySelectorAll("[data-carousel-button]")
 
     buttons.forEach(button => {
